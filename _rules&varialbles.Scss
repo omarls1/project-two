@@ -1,0 +1,62 @@
+// variables
+$main-padding: 70px 30px;
+$main-color: #333366;
+$second-color: #ff3366;
+
+// rules 
+* {
+    scroll-behavior: smooth;
+}
+
+.story,
+.services,
+.work,
+.clients,
+.testimonials,
+.help,
+.social,
+.links {
+    padding: 40px 20px;
+}
+
+@media (min-width:992px) {
+
+    .story,
+    .services,
+    .work,
+    .clients,
+    .testimonials,
+    .help,
+    .social,
+    .links {
+        padding: $main-padding;
+    }
+}
+
+
+// components
+.italic-heading {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.main-heading {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.btn.main-btn {
+    background-color: $second-color;
+    color: white;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px #ff6699;
+    border: 2px solid $second-color !important;
+    transition: 0.6s;
+}
+
+.btn.main-btn:hover {
+    background-color: white;
+    color: $second-color;
+}

@@ -1,0 +1,57 @@
+.company {
+    background-image: url(./aboutCompany/WorldMap.png);
+    padding: $main-padding;
+    padding-bottom: 0;
+
+    .container {
+        .row {
+            .text {
+                .collapses {
+                    margin: {
+                        top: 50px;
+                        bottom: 70px;
+                    }
+
+                    .tabses {
+                        display: inline-block;
+
+                        .badge {
+                            cursor: pointer;
+                            padding: 10px 20px;
+                            transition: 0.4s;
+                        }
+
+                        .badge.active {
+                            background-color: $second-color;
+                            color: white;
+                            box-shadow: 0 0 9px #44444482;
+                            cursor: pointer;
+
+                        }
+
+                        .badge:hover:not(.badge.active) {
+                            background-color: #ff336629;
+                        }
+                    }
+
+                    .tabsContent {
+                        div {
+                            p {
+                                padding: 10px;
+                                padding-top: 0;
+                                line-height: 2;
+                                font-size: 14px;
+                                color: #444444ba;
+                            }
+                        }
+
+                        >div:not([class="active"]) {
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

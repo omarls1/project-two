@@ -1,0 +1,35 @@
+.clients {
+    background-color: $main-color;
+
+    .container {
+        padding: 15px 30px;
+
+        .row {
+
+            div {
+                padding: 10px;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+
+                img {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .clients {
+        .container {
+            .row {
+                div:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

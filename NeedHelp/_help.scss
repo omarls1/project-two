@@ -1,0 +1,65 @@
+.help {
+    background-image: url(./NeedHelp/bg.png);
+    text-align: center;
+    color: white;
+
+    .container {
+        >* {
+            padding: 5px;
+        }
+
+        .row {
+            input {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                margin-top: 5px;
+                width: 40%;
+                background-color: #ffdee661;
+
+                &::placeholder {
+                    padding: 5px 10px;
+                    color: white;
+                    text-transform: capitalize;
+
+                }
+
+                &:focus {
+                    border: 1px solid #ff336629;
+                    color: white;
+                    font-weight: bold;
+                    outline: none;
+                }
+            }
+
+            .btn.main-btn {
+                width: 15%;
+                height: 45px;
+            }
+        }
+
+    }
+}
+
+@media (max-width:991px) {
+    .help {
+        .container {
+            .row {
+                input {
+                    width: 100%;
+                }
+
+                .btn.main-btn {
+                    width: 52%;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .help .container .row {
+        padding: 20px 85px;
+    }
+}

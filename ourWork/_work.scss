@@ -1,0 +1,49 @@
+.work {
+    background-color: #eee;
+    text-align: center;
+
+    .container {
+        .works {
+            margin: 35px 0;
+
+            .switcher {
+                .badge {
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    transition: 0.4s;
+                }
+
+                .badge.active {
+                    background-color: $second-color;
+                    color: white;
+                    box-shadow: 0 0 9px #44444482;
+                    cursor: pointer;
+
+                }
+
+                .badge:hover:not(.badge.active) {
+                    background-color: #ff336629;
+                }
+            }
+
+            .gallery {
+                img {
+                    margin: 16px 1px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
+                img:hover {
+                    transform: scale(1.05) rotate(0.4deg);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:992px) {
+    .work {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}

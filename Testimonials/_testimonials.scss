@@ -1,0 +1,51 @@
+.testimonials {
+  background-image: url(./Testimonials/Imge.png);
+  color: white;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
+
+  .container {
+    .row {
+      .text {
+        p:first-of-type {
+          font-style: italic;
+          position: relative;
+          padding: 30px 60px;
+        }
+
+        p:first-of-type::before {
+          content: open-quote;
+          position: absolute;
+          font-family: "Montserrat", sans-serif;
+          font-size: 80px;
+          font-weight: bold;
+          color: #ff336629;
+          left: 9px;
+          top: -13px;
+          transform: rotate(4deg);
+        }
+
+        img,
+        img + p {
+          padding: 10px;
+          padding-bottom: 0;
+        }
+      }
+
+      .image {
+        margin-top: -70px;
+
+        img {
+          height: 438px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .testimonials {
+    background-size: cover;
+    text-align: center;
+  }
+}

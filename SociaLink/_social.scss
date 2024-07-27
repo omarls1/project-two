@@ -1,0 +1,30 @@
+.social {
+    background-color: $main-color;
+    text-align: center;
+    padding: 45px;
+
+    .nav {
+        .nav-item {
+            .nav-link {
+                color: white;
+                font-weight: 500;
+                text-transform: capitalize;
+                font-size: 20px;
+                transition: 0.2s;
+
+                &::after {
+                    content: "";
+                    border-right: 1px solid #ffffff7a;
+                    display: inline-block;
+                    padding: 10px;
+                    vertical-align: middle;
+
+                }
+
+                &:hover {
+                    color: $second-color;
+                }
+            }
+        }
+    }
+}

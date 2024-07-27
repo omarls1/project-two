@@ -1,0 +1,39 @@
+.achievement {
+    color: white;
+    text-align: center;
+    background-color: $main-color;
+
+    .container {
+
+        .row {
+            .box {
+                padding: $main-padding;
+
+                >* {
+                    padding: 5px;
+                }
+
+                h3 {
+                    padding: 10px;
+                    padding-left: 0;
+                    font-size: 37px;
+                    font-weight: bold;
+                }
+
+                h5 {
+                    font-weight: 600;
+                }
+
+                p {
+                    margin-top: 10px;
+                    color: #ffffffd6;
+                    font-size: 12px;
+                }
+            }
+
+            .box:nth-child(2) {
+                background-color: #222244;
+            }
+        }
+    }
+}

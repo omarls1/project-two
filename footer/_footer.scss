@@ -1,0 +1,32 @@
+footer {
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+
+    .nav {
+        .nav-item {
+            .nav-link {
+                color: black;
+                display: inline-block;
+            }
+
+            &:first-of-type .nav-link {
+                color: $main-color;
+                transition: 0.2s;
+
+                &:hover {
+                    color: $second-color;
+                }
+            }
+
+            &::after {
+                content: ".";
+            }
+
+            &:last-of-type::after {
+                content: "";
+            }
+        }
+    }
+}

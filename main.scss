@@ -1,0 +1,74 @@
+/* rules and variables and components */
+@import "./_rules&varialbles";
+
+// import layouts
+/* start header */
+@import "./header/header";
+/* end header */
+/* start company */
+@import "./aboutCompany/about";
+/* end company */
+/* start achievement */
+@import "./ourAchievement/achievement";
+/* end achievement */
+/* start story*/
+@import "./story/story";
+/* end story */
+/* start services*/
+@import "./ourServices/services";
+/* end services */
+/* start work */
+@import "./ourWork/work";
+/* end work */
+/* start clients logo */
+@import "./OurClientLogo/clients";
+/* end clients logo */
+/* start testimonials */
+@import "./Testimonials/testimonials";
+/* end clients testimonilas */
+/* start help */
+@import "./NeedHelp/help";
+/* end help */
+/* start social */
+@import "./SociaLink/social";
+/* end social */
+/* start links */
+@import "./Quicklinks/links";
+/* end links */
+/* start footer */
+@import "./footer/footer";
+
+/* end footer */
+/* start color change */
+.colors {
+  position: fixed;
+  top: 150px;
+  background: #444;
+  padding: 20px;
+  left: 0;
+  border-top-right-radius: 30px;
+
+  h3,
+  h5 {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 0;
+  }
+
+  h5 {
+    padding-left: 10px;
+  }
+
+  span {
+    height: 50px;
+    width: 50px;
+    margin-left: 22px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+  }
+}
+
+/* end colorchange */

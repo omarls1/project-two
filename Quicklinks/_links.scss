@@ -1,0 +1,35 @@
+.links {
+    background-image: url(./Quicklinks/WorldMap.png);
+
+    .container {
+        .row {
+            .uls {
+                ul {
+                    margin-bottom: 40px;
+
+                    h4 {
+                        font-weight: bold;
+                        color: $main-color;
+                    }
+
+                    li {
+                        list-style: none;
+                        padding: 2px 20px;
+                        font-weight: bold;
+
+                        &:first-of-type {
+                            margin-top: 10px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        text-align: center;
+    }
+}
